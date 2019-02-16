@@ -14,6 +14,9 @@
         <!--Font Awesome CDN-->
         <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 
+        <!--CSS stylesheet-->
+        <link rel="stylesheet" href="index.css"/>
+
         <title>Welcome to Rock-Paper-Scissors</title>
     </head>
     <body>
@@ -30,9 +33,20 @@
         <!--main part of the website-->
         <div class="container">
             <div class="row">
-                <i class="far fa-hand-rock fa-10x"></i><i class="far fa-hand-paper fa-10x"></i><i class="far fa-hand-scissors fa-10x"></i>
+                <div class="holder">
+                    <i class="far fa-hand-rock fa-10x"></i>
+                </div>
+
+                <div class="holder">
+                    <i class="far fa-hand-paper fa-10x"></i>
+                </div>
+
+                <div class="holder">
+                    <i class="far fa-hand-scissors fa-10x"></i>
+                </div>
             </div>
         </div>
+        <!--note to self: think about adding random words to the side of the webpage whenever the user wins a round-->
             
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
