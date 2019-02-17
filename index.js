@@ -1,12 +1,38 @@
-window.onload = buttonPressed
+window.onload = buttonFuntionality
 
-function init() {
-    let answer = document.createTextNode("Hello World!")
-    let foo = document.getElementById("computer-answer")
-    foo.appendChild(answer)
+function wordCreator(foo) {
+    let text = document.createTextNode(`You chose ${foo}`)
+    let place = document.getElementById("user-answer")
+    place.appendChild(text)
 }
 
-function buttonPressed() {
-    let btn = document.getElementById("rock")
-    btn.addEventListener("click", init)
+function buttonPressed(btn) {
+    btn.addEventListener("click", wordInitialiser(btn))
+}
+
+function buttonFuntionality() {
+    let rock = document.getElementById("rock")
+    let paper = document.getElementById("paper")
+    let scissors = document.getElementById("scissors")
+    buttonPressed(rock)
+    buttonPressed(paper)
+    buttonPressed(scissors)
+}
+
+function wordInitialiser(btn) {
+    switch (btn) {
+        case rock:
+            wordCreator("rock")
+            break
+        case paper:
+            wordCreator("paper")
+            break
+        case scissors:
+            wordCreator("scissors")
+            break
+        default:
+            console.log("Something's wrong...")
+    }
+
+
 }
