@@ -17,6 +17,9 @@
         <!--CSS stylesheet-->
         <link rel="stylesheet" href="index.css"/>
 
+        <!--JavaScript file-->
+        <script src="index.js"></script>
+
         <title>Welcome to Rock-Paper-Scissors</title>
     </head>
     <body>
@@ -35,16 +38,25 @@
             <div class="row">
                 <div class="mx-auto">
                     <div class="holder">
-                        <i class="far fa-hand-rock fa-10x"></i>
+                        <i class="far fa-hand-rock fa-10x" id="rock"></i>
                     </div>
 
                     <div class="holder">
-                        <i class="far fa-hand-paper fa-10x"></i>
+                        <i class="far fa-hand-paper fa-10x" id="paper"></i>
                     </div>
 
                     <div class="holder">
-                        <i class="far fa-hand-scissors fa-10x"></i>
+                        <i class="far fa-hand-scissors fa-10x" id="scissors"></i>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <span id="computer-answer" class="display-1"></span>
+                </div>
+                <div class="col-md-6">
+
                 </div>
             </div>
         </div>
