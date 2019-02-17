@@ -7,7 +7,7 @@ function wordCreator(foo) {
 }
 
 function buttonPressed(btn) {
-    btn.addEventListener("click", wordInitialiser(btn))
+    btn.addEventListener("click", () => wordInitialiser(btn))
 }
 
 function buttonFuntionality() {
