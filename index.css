@@ -13,3 +13,11 @@
     transform: scale(1.2);
     cursor: pointer;
 }
+
+#verdict {
+    margin-top: 70px;
+}
+
+#computer-answer {
+    float: right;
+}
