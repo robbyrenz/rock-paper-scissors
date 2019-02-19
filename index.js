@@ -5,12 +5,14 @@ window.onload = buttonFuntionality
 function wordCreator(foo) {
     if (!clicked) {
         clicked = true
-        let text = document.createTextNode(`You chose ${foo}`)
         let place = document.getElementById("user-answer")
-        place.appendChild(text)
+        // using innerHTML rather than appendText so that it rewrites the user's previous option
+        place.innerHTML = `You chose ${foo}`
+
+        // wait around a second before letting the user choose another icon
         setTimeout(() => {
             clicked = false
-        }, 3000)
+        }, 1000)
     }
 }
 
@@ -41,6 +43,8 @@ function wordInitialiser(btn) {
         default:
             console.log("Something's wrong...")
     }
+}
 
+function computer() {
 
 }
