@@ -1,9 +1,17 @@
+let clicked = false
+
 window.onload = buttonFuntionality
 
 function wordCreator(foo) {
-    let text = document.createTextNode(`You chose ${foo}`)
-    let place = document.getElementById("user-answer")
-    place.appendChild(text)
+    if (!clicked) {
+        clicked = true
+        let text = document.createTextNode(`You chose ${foo}`)
+        let place = document.getElementById("user-answer")
+        place.appendChild(text)
+        setTimeout(() => {
+            clicked = false
+        }, 3000)
+    }
 }
 
 function buttonPressed(btn) {
